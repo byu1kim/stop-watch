@@ -1,3 +1,9 @@
+import styled from "styled-components";
+
+const Btn = styled.button`
+  background-color: skyblue;
+`;
+
 const Time = ({ time }) => {
   return (
     <>

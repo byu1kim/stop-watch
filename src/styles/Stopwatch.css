@@ -1,0 +1,41 @@
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time {
+  margin: 20px;
+  padding: 20px;
+  font-size: 10rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  width: 100px;
+  cursor: pointer;
+}
+
+.buttons button:nth-child(1) {
+  background-color: green;
+}
+
+.buttons button:nth-child(2) {
+  background-color: darkred;
+}
+
+.buttons button:nth-child(3) {
+  background-color: goldenrod;
+}
+
+.buttons button:last-child {
+  background-color: pink;
+}
