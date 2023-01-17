@@ -9,19 +9,17 @@ const Home = () => {
   };
 
   return (
-    <>
-      <main>
-        <section className="home">
-          <div className="wathes">
-            <Stopwatch />
-          </div>
-          <div>
-            <button onClick={addWatch}>+</button>
-            {watch}
-          </div>
-        </section>
-      </main>
-    </>
+    <main>
+      <section className="home">
+        <div className="watches">
+          <Stopwatch />
+        </div>
+        <div>
+          <button onClick={addWatch}>+</button>
+          {watch}
+        </div>
+      </section>
+    </main>
   );
 };
 

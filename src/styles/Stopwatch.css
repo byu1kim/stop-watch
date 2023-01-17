@@ -1,16 +1,25 @@
 .stopwatch {
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 80vh;
+  margin: 30px;
 }
 
-.time {
+.time-frame {
   margin: 20px;
   padding: 20px;
-  font-size: 10rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.5);
   display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 

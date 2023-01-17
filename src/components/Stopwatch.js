@@ -51,19 +51,16 @@ const Stopwatch = () => {
     const date = new Date();
     const today =
       date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
-    const obj = { date: today, time: time };
-    dispatch(save());
-    console.log("??");
+    dispatch(save({ date: today, time: time }));
   };
-
-  const test = () => {
-    console.log("TEST");
-    const a = localStorage.getItem("stopwatch");
-    console.log(a);
-  };
+  //save btn안눌러도 자동으로 저장되게 하기
+  // state사용해서 버튼 사라졋다 안사라졋다
+  // 슬라이스 안써도 로컬스토리지만 사용해도 되지않나 ?
+  // 스타트 버튼 누를때 데이 저장 ?
+  // 화면 넘기면 안돌아가는거 해결
   return (
     <div className="stopwatch">
-      <div className="time">
+      <div className="time-frame">
         <Time time={time} />
       </div>
       <div className="buttons">
@@ -72,8 +69,7 @@ const Stopwatch = () => {
         <button onClick={() => setTime(0)}>Reset</button>
         <button onClick={handleLab}>Lab</button>
         <button onClick={() => setDiv([])}>LabClear</button>
-        <button onClick={() => dispatch(save({ d: "" }))}>Save</button>
-        <button onClick={test}>TEST</button>
+        <button onClick={handleSave}>Save</button>
         {/* Save : send current datetime - time (start time) */}
         {div}
       </div>

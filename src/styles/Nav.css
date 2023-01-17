@@ -1,0 +1,21 @@
+header {
+}
+
+nav {
+  background-color: pink;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  padding: 10px;
+}
+
+ul a {
+  color: white;
+  text-decoration: none;
+}
